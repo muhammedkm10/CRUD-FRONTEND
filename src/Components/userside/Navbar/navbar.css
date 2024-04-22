@@ -1,0 +1,27 @@
+.links{
+    text-decoration: none;
+    padding:10px;
+    color: white !important;
+}
+.links1{
+    color: white !important;
+    text-decoration: none;
+    padding:10px;
+}
+/* .l1{
+    display: flex;
+} */
+.logout{
+    margin-right: 1px;
+}
+.bg-body-info{
+    background-color: rgb(34, 30, 23);
+}
+.links:hover{
+      border-bottom: 2px rgb(251, 246, 246) solid;
+
+}
+.toggle{
+    color:white;
+    background-color:black;
+}

@@ -1,0 +1,62 @@
+.form-wrapper{
+    display: flex;
+    text-align: center;
+    border: none;
+}
+.elements{
+    padding: 4px;
+    margin: 3px;
+    border: none;
+}
+input{
+    margin: 10px;
+}
+.card{
+
+    text-align: center;
+    background-color:white;
+   
+}
+.phone {
+    -moz-appearance: textfield; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none; /* Other modern browsers */
+}
+
+.phone::-webkit-inner-spin-button,
+.phone::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Hide the buttons in WebKit browsers */
+    margin: 0; /* Remove any default margin */
+}
+
+.phone::-moz-inner-spin-button,
+.phone::-moz-outer-spin-button {
+    display: none; /* Hide the buttons in Firefox */
+}
+
+.card-body{
+    width: 15rem ;
+    height: 27rem;
+    border-radius: 4px;
+    border:black 1px solid;
+
+    
+}
+input{
+    padding: 4px;
+    width: max-content;
+    border-radius: 4px;
+    border:0.2px solid rgb(182, 174, 174);
+    
+}
+.center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+
+}
+.y{
+    margin-top: 100px;
+}

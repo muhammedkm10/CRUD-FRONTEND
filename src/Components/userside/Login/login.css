@@ -1,0 +1,50 @@
+.form-wrapper{
+    display: flex;
+    text-align: center;
+    border: none;
+}
+.elements{
+    padding: 4px;
+    margin: 3px;
+    border: none;
+}
+input{
+    margin: 10px;
+}
+.card{
+
+    text-align: center;
+    background-color:white;
+   
+}
+
+.signuplink{
+    color: rgb(43, 0, 236);
+    margin-left: 5px;
+}
+.card-body{
+    width: 15rem ;
+    height: 27rem;
+    border-radius: 4px;
+    border:black 1px solid;
+
+    
+}
+input{
+    padding: 4px;
+    width: max-content;
+    border-radius: 4px;
+    border:0.2px solid rgb(182, 174, 174);
+    
+}
+.center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+
+}
+.y{
+    margin-top: 100px;
+}
