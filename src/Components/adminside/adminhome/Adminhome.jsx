@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import AdminContext from '../../../contexts/AdminContext'
 import { Button } from 'react-bootstrap';
 
 function Adminhome() {

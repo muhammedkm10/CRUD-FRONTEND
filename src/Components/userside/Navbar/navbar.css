@@ -25,3 +25,17 @@
     color:white;
     background-color:black;
 }
+.button1{
+    background-color: rgb(34, 30, 23);
+    border: none;
+    color: white;
+    margin-left: 10px
+}
+.button1:hover{
+    background-color:red;
+    border: none;
+    color: black;
+    border-radius: 3px;
+    padding: 3px;
+}
+

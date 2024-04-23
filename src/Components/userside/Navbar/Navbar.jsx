@@ -3,11 +3,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import './navbar.css'
-import { useContext } from 'react';
-import AuthContext from '../../../contexts/AuthContext';
+import { useContext,useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function NavScrollExample() {
-  const {user,logout} = useContext(AuthContext)
+  const navigate = useNavigate()
+  const [user, setUser] = useState(() => {
+    const token = localStorage.getItem("authTokens");
+    
+    if (token) {
+        return JSON.parse(token);
+    } else {
+        return null;
+    }
+});
+    let logout = ()=>{
+      localStorage.removeItem('authTokens')
+      console.log('logout')
+      navigate('/login')
+        }
+
+
   return (
     <Navbar expand="lg" className="bg-body-info">
       <Container fluid>
@@ -24,7 +40,7 @@ function NavScrollExample() {
            <Link className='links' to="/login">login</Link>:
            <div >
            <Link className='links' to="/userprofile">My profile</Link>
-           <Link className='links' onClick={logout}>logout</Link>
+           <button className='button1' onClick={logout}>logout</button>
            </div>
 
            }

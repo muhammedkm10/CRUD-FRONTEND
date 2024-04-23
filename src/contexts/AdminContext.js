@@ -32,7 +32,8 @@ export  const AdminsideProvider = ({children})=>{
                     
                    localStorage.setItem('Admintoken',JSON.stringify(response.data))
                 }
-             }).then((response)=>{
+             })
+             .then((response)=>{
                 Swal.fire({
                     icon: 'success',
                     title: 'succes',
@@ -73,8 +74,6 @@ export  const AdminsideProvider = ({children})=>{
 
     let details = {
         submithandler,
-        admin,
-        adminToken
     }
     return(
         <AdminContext.Provider value={details}>
@@ -82,6 +81,8 @@ export  const AdminsideProvider = ({children})=>{
         </AdminContext.Provider>
     )
 }
+
+
 
 
 
